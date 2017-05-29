@@ -4,9 +4,10 @@ To develop this theme you will need to do the following:
 2. Clone this repository inside your MAMP\htdocs\mus\wp-content\themes folder. Recommend using Source Tree https://www.sourcetreeapp.com/
 3. Log into your local WordPress site /wp-admin and go to Appearance > Themes and activate the mus theme. You can then delete the other themes from your wp-content\themes folder.
 4. Switch to the develop branch. Click the GitFlow button in Sourcetree and create a new feature branch with the same name as the Trello task you are working on. Read about GitFlow here https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow
-5. Make your changes and test them locally as you go. Commit and push changes often as you go to keep each commit relatively small.
-6. Once you are happy with the changes on your branch, push all of your commits and then go to GitHub and submit a Pull Request.
-7. Your pull request will be code-reviewed by another member of the team before it is merged into the develop branch, which will them be deployed to the test site.
+5. Restore a backup from the live website on your local worpress site so that you have content to work with while developing.
+6. Make your changes and test them locally as you go. Commit and push changes often as you go to keep each commit relatively small.
+7. Once you are happy with the changes on your branch, push all of your commits and then go to GitHub and submit a Pull Request.
+8. Your pull request will be code-reviewed by another member of the team before it is merged into the develop branch, which will them be deployed to the test site.
 
 _s
 ===
