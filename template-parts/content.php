@@ -19,9 +19,9 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
+		<small class="entry-meta">
 			<?php mus_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		</small><!-- .entry-meta -->
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->

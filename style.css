@@ -234,10 +234,14 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   color: #666;
   font-family: "Roboto", sans-serif;
-  margin-top: 0; }
+  margin: 0 0 .2em; }
+
+h1 {
+  font-size: 3em;
+  margin: 0 0 .1em; }
 
 p {
-  margin-bottom: 1.5em; }
+  margin: 0 0 1.5em; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -461,11 +465,11 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    display: inline;
+    float: left;
+    margin-right: 1.5em;
     position: relative; }
   .main-navigation a {
-    display: inline-block;
-    margin-right: 1em;
+    display: block;
     text-decoration: none; }
   .main-navigation .current_page_item > a,
   .main-navigation .current-menu-item > a,
@@ -597,17 +601,18 @@ a {
 --------------------------------------------------------------*/
 .site {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 800px;
   width: 92%; }
+
+.site-header,
+article {
+  margin-bottom: 5em; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
   display: block; }
-
-.hentry {
-  margin: 0 0 1.5em; }
 
 .byline,
 .updated:not(.published) {
