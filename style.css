@@ -291,15 +291,21 @@ html {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit; }
 
+article {
+  border-top: solid 0.5em #ccc;
+  margin: 1em 0 4em;
+  padding-top: 1em; }
+
 body {
   background: white;
   /* Fallback for when there is no custom background color defined. */
-  padding: 1.5em 2em; }
+  padding: 0 1em; }
 
 blockquote, q {
   quotes: "" ""; }
   blockquote:before, blockquote:after, q:before, q:after {
-    content: ""; }
+    content: "";
+    font-size: 1.5em; }
 
 hr {
   background-color: #ccc;
@@ -599,20 +605,16 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.site {
-  margin: 0 auto;
-  max-width: 800px;
-  width: 92%; }
-
-.site-header,
-article {
-  margin-bottom: 5em; }
-
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.site {
+  margin: 0 auto;
+  max-width: 1000px; }
+
 .sticky {
-  display: block; }
+  display: block;
+  border-color: #5b8; }
 
 .byline,
 .updated:not(.published) {
