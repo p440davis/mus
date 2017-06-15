@@ -446,6 +446,7 @@ a {
   clear: both;
   display: block;
   float: left;
+  margin: 1em 0 0 0;
   width: 100%; }
   .main-navigation ul {
     display: none;
@@ -482,6 +483,10 @@ a {
   .main-navigation .current_page_ancestor > a,
   .main-navigation .current-menu-ancestor > a {
     color: #444; }
+  .main-navigation .menu-item-home > a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    color: #3a7; }
 
 /* Small menu. */
 .menu-toggle,
