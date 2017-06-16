@@ -1,9 +1,11 @@
-.sticky {
-	display: block;
+.site {
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
-.hentry {
-	margin: 0 0 1.5em;
+.sticky {
+	display: block;
+	border-color: $color__border-sticky;
 }
 
 .byline,

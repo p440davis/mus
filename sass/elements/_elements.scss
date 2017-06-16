@@ -8,8 +8,15 @@ html {
 	box-sizing: inherit;
 }
 
+article {
+    border-top: solid .5em $color__border;
+    margin: 1em 0 4em;
+	padding-top: 1em
+}
+
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	padding: 0 1em;
 }
 
 blockquote, q {
@@ -18,6 +25,7 @@ blockquote, q {
 	&:before,
 	&:after {
 		content: "";
+		font-size: 1.5em;
 	}
 }
 
