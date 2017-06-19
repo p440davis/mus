@@ -12,6 +12,7 @@
  * @package mus
  */
 
+team_pages();
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -34,5 +35,27 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
+
+/**
+ * List child pages
+ */
+$args = array(
+    'post_parent' => $post->ID,
+    'post_type' => 'page',
+	'order' => 'ASC',
+    'orderby' => 'title'
+);
+
+$child_query = new WP_Query( $args );
+?>
+
+<?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
+
+    <div <?php post_class(); ?>> 
+        <h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+		<p><?php echo the_subtitle(); ?></p>
+    </div>
+<?php endwhile;
+
 get_sidebar();
 get_footer();
