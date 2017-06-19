@@ -22,10 +22,12 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
+
 $args = array(
     'post_parent' => $post->ID,
     'post_type' => 'page',
-    'orderby' => 'menu_order'
+	'order' => 'ASC',
+    'orderby' => 'title'
 );
 
 $child_query = new WP_Query( $args );
@@ -33,19 +35,11 @@ $child_query = new WP_Query( $args );
 
 <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
 
-    <div <?php post_class(); ?>>  
-        <?php  
-        if ( has_post_thumbnail() ) {
-            the_post_thumbnail('page-thumb-mine');
-        }
-        ?>
+    <div <?php post_class(); ?>> 
         <h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-        <?php echo excerpt(28); ?>
+		<?php echo the_subtitle(); ?>
     </div>
-<?php endwhile; ?>
-
-<?php
-wp_reset_postdata();
+<?php endwhile;
 
 get_sidebar();
 get_footer();
