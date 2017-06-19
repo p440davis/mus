@@ -118,6 +118,22 @@ function mus_scripts() {
 add_action( 'wp_enqueue_scripts', 'mus_scripts' );
 
 /**
+ * Hide team pages behind login
+ */
+function team_pages() { 
+	global $post;
+	$ancestors = get_post_ancestors( $post->ID );
+	$id = ($ancestors) ? $ancestors[count($ancestors)-1]: $post->ID;
+    $ancestor = get_post( $id );
+
+	if ( is_page('team-pages') || $ancestor->post_name == 'team-pages' ) {
+		if ( !is_user_logged_in() ) {
+			auth_redirect();
+		}
+	}
+}
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
