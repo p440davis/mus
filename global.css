@@ -1,5 +1,4 @@
-<style>
-  * {
+* {
     width: auto !important;
     height: auto !important;
     position: static !important;
@@ -1689,4 +1688,3 @@ section > br + br,
     background-attachment: scroll !important;
   }
 }
-</style>
