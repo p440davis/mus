@@ -23,3 +23,16 @@ This theme is based on a starter theme called `_s`, or `underscores`, which incl
 * 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
 * Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
 * Licensed under GPLv2 or later. :) Use it to make something cool.
+
+Plugins
+===
+
+Install the following wordpress plugins:
+* Add Search To Menu
+* Affiliate Links Lite
+* Content Progress
+* Easy Footnotes
+* Loginizer
+* UpdraftPlus - Backup/Restore
+* Very Simple Password for Wordpress
+* WP Subtitle
